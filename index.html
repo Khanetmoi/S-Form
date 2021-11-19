@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Survey Form microverse</title>
 </head>
+
 <body>
     <div id="parent title">
         <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -14,14 +16,33 @@
     </div>
     <div id="form">
         <form id="survey-form" action="">
-            <label><h3>Name</h3></label>
+            <label id="name-label" for="name">
+                <h3>Name</h3>
+            </label>
             <input id="name" type="text" placeholder="Enter your name">
-            <label for=""><h3>Email</h3></label>
+            <label for="email" id="email-label">
+                <h3>Email</h3>
+            </label>
             <input type="email" name="" id="email" placeholder="Enter your Email">
-            <label for=""><h3>Age(optional)</h3></label>
+            <label for="number" id="number-label">
+                <h3>Age(optional)</h3>
+            </label>
             <input type="number" name="" id="number" placeholder="Age">
+
+            <label for="dropdown"><h3>Which option best describes your current role?</h3></label>
+            <select name="dropdown" id="dropdown" >
+                <option value="none" selected disabled hidden>
+                    Select an Option
+                </option>
+                <option value="">Challenges</option>
+                <option value="">Projects</option>
+                <option value="">Community</option>
+                <option value="">Open Source</option>
+            </select>
+            <br><br>
         </form>
     </div>
-    
+
 </body>
+
 </html>
